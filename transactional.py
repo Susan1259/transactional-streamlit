@@ -11,7 +11,8 @@ st.title("🔍 Transactional Data Analysis")
 # ─── 2. LOAD & PREPARE DATA ───────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\Asus\Downloads\bank_transactions_data_2.csv")
+    df = pd.read_csv(r"bank_transactions_data_2.csv")
+
     return df
 
 df = load_data()
